@@ -1,0 +1,7 @@
+1. 46 
+    - Pay attention to how you calculate time complexity
+
+2. 237 (FAIL)
+    - A new technique to delete node in single linked list (or linked list in general). Delete the NEXT node not the current node 
+
+3. 78
