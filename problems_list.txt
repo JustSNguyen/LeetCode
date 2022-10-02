@@ -5,3 +5,6 @@
     - A new technique to delete node in single linked list (or linked list in general). Delete the NEXT node not the current node 
 
 3. 78
+
+4. 42 (FAIL)
+    - For "bounded" problems, it might be a good idea to find the left_max and right_max arrays
