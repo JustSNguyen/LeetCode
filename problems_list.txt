@@ -8,3 +8,11 @@
 
 4. 42 (FAIL)
     - For "bounded" problems, it might be a good idea to find the left_max and right_max arrays
+
+5. 22 (FAIL)
+    - Try to prove why the time complexity is O(4^N/SQRT(N)) for the backtracking solution.
+
+6. 230 
+    - Review the definition of BST 
+    - Review inorder, preorder and postorder traversal
+    - For BST, inorder traversal produces an array of non-decreasing value.
