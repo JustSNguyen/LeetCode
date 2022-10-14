@@ -16,3 +16,10 @@
     - Review the definition of BST 
     - Review inorder, preorder and postorder traversal
     - For BST, inorder traversal produces an array of non-decreasing value.
+
+7. 48 
+    - Learn how to transpose and reflect a matrix without creating a new matrix 
+    - In problem that requires you to modify a matrix without creating a new one, try to transform it back to 
+    transpose and reflect matrix problem first. 
+
+8. 289 
