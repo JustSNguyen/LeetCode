@@ -1,4 +1,4 @@
-1. 46 
+1. 46 (REVIEW)
     - Pay attention to how you calculate time complexity
 
 2. 237 (FAIL)
@@ -12,12 +12,12 @@
 5. 22 (FAIL)
     - Try to prove why the time complexity is O(4^N/SQRT(N)) for the backtracking solution.
 
-6. 230 
+6. 230 (REVIEW)
     - Review the definition of BST 
     - Review inorder, preorder and postorder traversal
     - For BST, inorder traversal produces an array of non-decreasing value.
 
-7. 48 
+7. 48 (REVIEW)
     - Learn how to transpose and reflect a matrix without creating a new matrix 
     - In problem that requires you to modify a matrix without creating a new one, try to transform it back to 
     transpose and reflect matrix problem first. 
@@ -26,8 +26,11 @@
 
 9. 49 
 
-10. 215 
+10. 215 (FAIL)
     - Learn a new algorithm: Quick Select (like QuickSort) which is an algorithm that can be used to find the kth smallest/ largest element. 
     - Review how to code QuickSort again
 
-11. 140 
+11. 140 (REVIEW)
+    - Pay attention to how you calculate time complexity 
+
+12. 347
