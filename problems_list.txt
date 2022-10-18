@@ -29,3 +29,5 @@
 10. 215 
     - Learn a new algorithm: Quick Select (like QuickSort) which is an algorithm that can be used to find the kth smallest/ largest element. 
     - Review how to code QuickSort again
+
+11. 140 

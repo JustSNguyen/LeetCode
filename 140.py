@@ -12,10 +12,13 @@ class Solution:
             for substring_length in range(1, N + 1):
                 substring = s[:substring_length]
                 if substring in wordDict:
+                    if substring_length == N:
+                        sentences_dict[s].append(substring)
+                        continue 
+
                     sentences = generate_sentences(s[substring_length:])
                     for sentence in sentences:
-                        new_sentence = ' '.join(substring, sentence)
-                        print(new_sentence)
+                        new_sentence = substring + ' ' + sentence
                         sentences_dict[s].append(new_sentence)
             
             return sentences_dict[s]
@@ -24,6 +27,6 @@ class Solution:
 
 if __name__ == '__main__':
     sol = Solution()
-    s = "catsandog"
-    wordDict = ["cats","dog","sand","and","cat"]
+    s = "pineapplepenapple"
+    wordDict = ["apple","pen","applepen","pine","pineapple"]
     print(sol.wordBreak(s, wordDict))
