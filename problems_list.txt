@@ -23,3 +23,6 @@
     transpose and reflect matrix problem first. 
 
 8. 289 
+
+9. 49 
+
