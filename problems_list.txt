@@ -47,3 +47,12 @@
 Be careful of edge cases 
 
 18. 102 (REVIEW)
+
+19. 125 
+Read the problem statement CAREFULLY
+
+20. 136 
+- What is xor ? 
+- 1 xor 2 xor 3 xor 4 = 1 xor 4 xor 2 xor 3 = 1 xor 3 xor 2 xor 4 = ... 
+- a xor a = 0 
+- 0 xor a = a 
