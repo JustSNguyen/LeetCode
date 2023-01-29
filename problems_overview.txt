@@ -1,4 +1,4 @@
-TOTAL: 25
+TOTAL: 26
 EASY: 11 (10/11)
-MEDIUM: 12 (9 / 12) 
+MEDIUM: 13 (10 / 13) 
 HARD: 2 (1 / 2)
