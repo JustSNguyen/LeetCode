@@ -25,7 +25,6 @@ class Solution:
         power_of_two = [1 for _ in range(log_2_k + 1)]
         for i in range(1, log_2_k + 1):
             power_of_two[i] = 2 * power_of_two[i - 1]
-
         @lru_cache(maxsize=3400000)
         def calculate_passing_value(current_passer, j):
             if j == 0:
@@ -37,15 +36,13 @@ class Solution:
             log_2_j = math.floor(math.log(j, 2))
             next_passer = receiver[current_passer][log_2_j]
             return sum_of_receiver[current_passer][log_2_j] + calculate_passing_value(next_passer, j - power_of_two[log_2_j]) - next_passer
-            
-        
+
         max_result = 0 
         for passer in range(number_of_passers):
             max_result = max(max_result, calculate_passing_value(passer, k))
 
         return max_result
 
-        
 
 if __name__ == '__main__':
     sol = Solution()
