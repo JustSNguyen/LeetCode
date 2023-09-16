@@ -1,8 +1,10 @@
 from functools import lru_cache
 
+
 class Solution:
-    def solve(self, ratings):
+    def candy(self, ratings):
         number_of_children = len(ratings)
+
         @lru_cache(maxsize=number_of_children)
         def longest_strictly_decreasing_sequence_starts_at(index):
             if index == number_of_children - 1 or ratings[index] <= ratings[index + 1]:
@@ -30,6 +32,5 @@ class Solution:
 if __name__ == '__main__':
     ratings = [1, 2, 3, 2, 1, 0]
     sol = Solution()
-    result = sol.solve(ratings)
+    result = sol.candy(ratings)
     print(result)
-
