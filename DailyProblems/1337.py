@@ -18,7 +18,9 @@ class Solution:
 
         result = []
         while current_k_weakest_rows_max_heap:
-            result.append(-heapq.heappop(current_k_weakest_rows_max_heap)[1])
+            cur_row = heapq.heappop(current_k_weakest_rows_max_heap)
+            row_index = -cur_row[1]
+            result.append(row_index)
 
         return result[::-1]
 
