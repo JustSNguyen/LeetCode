@@ -1,47 +1,32 @@
-from functools import lru_cache
+from collections import defaultdict
 
 
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
-        all_possible_characters = [chr(ascii_value) for ascii_value in range(ord('a'), ord('z') + 1)]
-        chosen_characters = []
+        char_count = defaultdict(int)
+        existed = set()
 
-        for character in all_possible_characters:
-            position = -1
-            cur_chosen_characters_index = len(chosen_characters) - 1
-            end_search_index = len(s)
+        for char in s:
+            char_count[char] += 1
 
-            while cur_chosen_characters_index >= 0 and position == -1:
-                chosen_character_info = chosen_characters[cur_chosen_characters_index]
-                start_search_index = chosen_character_info[1]
-                for i in range(start_search_index, end_search_index):
-                    if s[i] == character:
-                        position = i
-                        break
+        stack = []
 
-                end_search_index = start_search_index
-                cur_chosen_characters_index -= 1
+        for char in s:
+            if char in existed:
+                char_count[char] -= 1
+                continue
 
-            if position == -1:
-                for i in range(end_search_index):
-                    if s[i] == character:
-                        position = i
-                        break
+            while stack and char < stack[-1] and char_count[stack[-1]] > 0:
+                existed.remove(stack.pop())
 
-            if position != -1:
-                chosen_characters.append((character, position))
+            stack.append(char)
+            existed.add(char)
+            char_count[char] -= 1
 
-        print(chosen_characters)
-        chosen_positions = {tuple[1]: 1 for tuple in chosen_characters}
-        result = []
-        for i in range(len(s)):
-            if i in chosen_positions:
-                result.append(s[i])
-
-        return ''.join(result)
+        return "".join(stack)
 
 if __name__ == '__main__':
     sol = Solution()
-    test = "cbacdcbc"
+    test = "bbcaac"
     result = sol.removeDuplicateLetters(test)
     print(result)
