@@ -1,11 +1,17 @@
+import math
+
 class Solution:
     def isPowerOfFour(self, n: int) -> bool:
-        cur_power_of_four = 1
-        while cur_power_of_four <= n:
-            if cur_power_of_four == n:
-                return True
+        def is_integer(number: float) -> bool:
+            return int(number) == number
 
-            cur_power_of_four *= 4
+        if n <= 0:
+            return False
 
-        return False
+        sqrt_n = math.sqrt(n)
+        if not is_integer(sqrt_n):
+            return False
+
+        log2_sqrt_n = math.log2(sqrt_n)
+        return is_integer(log2_sqrt_n)
 
