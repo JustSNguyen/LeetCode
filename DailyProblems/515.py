@@ -12,32 +12,28 @@ class Solution:
     def largestValues(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
-
         max_value_at_row = []
-
         queue = deque()
-        processed = set()
-
-        queue.append((root, 0))
+        queue.append(root)
 
         while queue:
-            node, row = queue.popleft()
-            if node in processed:
-                continue
+            max_value = queue[0].val
+            number_of_nodes_left = len(queue)
 
-            processed.add(node)
+            while number_of_nodes_left > 0:
+                node = queue.popleft()
+                max_value = max(max_value, node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
 
-            if row >= len(max_value_at_row):
-                max_value_at_row.append(node.val)
-            else:
-                max_value_at_row[row] = max(max_value_at_row[row], node.val)
+                number_of_nodes_left -= 1
 
-            if node.left and node.left not in processed:
-                queue.append((node.left, row + 1))
-            if node.right and node.right not in processed:
-                queue.append((node.right, row + 1))
+            max_value_at_row.append(max_value)
 
         return max_value_at_row
+
 
 if __name__ == '__main__':
     s = Solution()

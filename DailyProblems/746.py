@@ -3,15 +3,13 @@ from functools import lru_cache
 
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
-        number_of_steps = len(cost)
+        N = len(cost)
+        dp = [0 for _ in range(N)]
+        dp[N - 1] = cost[N - 1]
+        dp[N - 2] = cost[N - 2]
 
-        @lru_cache(maxsize=number_of_steps)
-        def get_min_cost_climbing_from_step(index: int) -> int:
-            if index >= number_of_steps:
-                return 0
+        for i in range(N - 3, -1, -1):
+            dp[i] = min(dp[i + 1], dp[i + 2]) + cost[i]
 
-            return (min(get_min_cost_climbing_from_step(index + 1), get_min_cost_climbing_from_step(index + 2)) +
-                    cost[index])
-
-        return min(get_min_cost_climbing_from_step(0), get_min_cost_climbing_from_step(1))
+        return min(dp[0], dp[1])
 

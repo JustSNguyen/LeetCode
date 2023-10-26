@@ -3,8 +3,9 @@ from functools import lru_cache
 class Solution:
     def numWays(self, steps: int, arr_length: int) -> int:
         MOD = 10**9 + 7
+        arr_length = min(arr_length, steps)
 
-        @lru_cache(maxsize=steps*steps)
+        @lru_cache(maxsize=arr_length*arr_length)
         def count_number_of_ways(index: int, steps_available: int) -> int:
             if steps_available == 0 and index == 0:
                 return 1

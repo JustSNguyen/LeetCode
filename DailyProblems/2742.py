@@ -1,22 +1,20 @@
+import math
 from typing import List
 from functools import lru_cache
 
 class Solution:
     def paintWalls(self, cost: List[int], time: List[int]) -> int:
         number_of_walls = len(cost)
-        cost_sum = sum(cost)
 
         @lru_cache(number_of_walls * number_of_walls)
         def calculate_minimum_cost(wall_index: int, time_diff: int) -> int:
-            if wall_index == number_of_walls and time_diff >= 0:
+            if time_diff >= number_of_walls - wall_index:
                 return 0
 
             if wall_index == number_of_walls:
-                return cost_sum
+                return math.inf
 
-            new_time_diff_first_option = min(time_diff + time[wall_index], number_of_walls - wall_index)
-            first_option = calculate_minimum_cost(wall_index + 1, new_time_diff_first_option) + cost[wall_index]
-
+            first_option = calculate_minimum_cost(wall_index + 1, time_diff + time[wall_index]) + cost[wall_index]
             second_option = calculate_minimum_cost(wall_index + 1, time_diff - 1)
             return min(first_option, second_option)
 
