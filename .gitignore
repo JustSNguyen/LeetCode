@@ -1,10 +1,13 @@
 problems_list.txt 
 problems_overview.txt
 problems_to_review.txt
-add_fields_to_log.py
-my_add_fields_to_log.py
+test/add_fields_to_log.py
+test/my_add_fields_to_log.py
 .idea
-test.py
+test/test.py
 Ads_Limit.json
-Transactions.json
+test/Transactions.json
 Notes/
+test/
+env/
+
