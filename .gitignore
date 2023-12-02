@@ -8,6 +8,7 @@ test/test.py
 Ads_Limit.json
 test/Transactions.json
 Notes/
-test/
+test
 env/
+test.py
 
