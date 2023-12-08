@@ -4,15 +4,16 @@ class Solution:
     def minimumAddedCoins(self, coins: List[int], target: int) -> int:
         max_possible = 0
         addition = 0
-        for coin in sorted(coins):
-            if max_possible >= target:
-                return addition
+        sorted_coins = sorted(coins)
+        coin_index = 0
 
-            if coin > max_possible + 1:
+        while max_possible < target:
+            if coin_index >= len(coins) or sorted_coins[coin_index] > max_possible + 1:
                 addition += 1
                 max_possible += max_possible + 1
             else:
-                max_possible += coin
+                max_possible += sorted_coins[coin_index]
+                coin_index += 1
 
         return addition
 
