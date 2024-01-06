@@ -1,0 +1,11 @@
+Problems I should review:
++ 684 
++ 207 (review how to detect a cycle in the graph)
++ 211
+
+- NOTES:
++ For queue, list, ..., you should always check whether they are empty or not before indexing
++ READ THE QUESTION CAREFULLY
++ divide and take the remainder
++ For graph problems, you also need to ask for the number of edges.
++ For topology sort, you should check whether you can visit all the nodes after completing the dfs
