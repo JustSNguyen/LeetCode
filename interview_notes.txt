@@ -1,12 +1,30 @@
-Problems I should review:
-+ 684 
-+ 207 (review how to detect a cycle in the graph)
-+ 211
-+ 338 (trick to count to number of 1 bit )
+1. Range Sum of BST
+https://leetcode.com/problems/range-sum-of-bst/?envType=daily-question&envId=2024-01-08
+In tree problem, you should also ask if the nodes in the tree are all unique.
+NO
 
-- NOTES:
-+ For queue, list, ..., you should always check whether they are empty or not before indexing
-+ READ THE QUESTION CAREFULLY
-+ divide and take the remainder
-+ For graph problems, you also need to ask for the number of edges.
-+ For topology sort, you should check whether you can visit all the nodes after completing the dfs
+2. Guess the Word
+https://leetcode.com/problems/guess-the-word/description/
+Not a good problem, note that the provided strategy might not work all the time.
+NO
+
+3. Expressive Words
+https://leetcode.com/problems/expressive-words/description/
+- Try to make sure that the solution works before trying to code.
+- You need to make sure that your function always returns something.
+NO
+
+4. Kth Largest Element in an Array
+https://leetcode.com/problems/kth-largest-element-in-an-array/
+- For problem where you need to find kth largest value, kth smallest value or kth number that satisfies some
+conditions, there is a really huge chance you gonna need heap for that.
+- Should also review how a heap works
+- The quick sort trick to find the kth largest number in a list.
+YES
+
+5.  Find the Duplicate Number
+https://leetcode.com/problems/find-the-duplicate-number/description/
+Tricks to turn an array into linked list (index1 will connect with index nums[index1]). Note that this trick
+only works in case the value in the array between 0 and n - 1 (n is the length of the array)
+In problem where you need to find a duplicate element, try to think of the turtle and rabbit algorithm.
+YES

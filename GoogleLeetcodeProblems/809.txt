@@ -1,0 +1,46 @@
+from typing import List
+class Solution:
+    def expressiveWords(self, s: str, words: List[str]) -> int:
+        def convert_word_to_parts(word):
+            parts = []
+            prev_char = ""
+            cur_count = 0
+            for char in word:
+                if char != prev_char:
+                    if prev_char != "":
+                        parts.append((prev_char, cur_count))
+                    cur_count = 1
+                else:
+                    cur_count += 1
+
+                prev_char = char
+
+            parts.append((prev_char, cur_count))
+
+            return parts
+
+        s_parts = convert_word_to_parts(s)
+        result = 0
+        for word in words:
+            word_parts = convert_word_to_parts(word)
+            if len(word_parts) != len(s_parts): continue
+
+            stretchy = True
+            for i in range(len(word_parts)):
+                if word_parts[i][0] != s_parts[i][0]:
+                    stretchy = False
+                    break
+
+                if word_parts[i][1] > s_parts[i][1]:
+                    stretchy = False
+                    break
+
+                if word_parts[i][1] < s_parts[i][1] and s_parts[i][1] < 3:
+                    stretchy = False
+                    break
+
+            if stretchy:
+                result += 1
+
+        return result
+
