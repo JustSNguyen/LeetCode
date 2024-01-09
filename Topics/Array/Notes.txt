@@ -1,0 +1,25 @@
+1. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+LINK: https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
+DO AGAIN: YES 
+Notes:
++ For subarray problems, sliding window is a very powerful technique 
++ You can combine sliding window and monotonic queue to get the minimum value and maximum value of the current window.
+
+
+2. Constrained Subsequence Sum
+LINK: https://leetcode.com/problems/constrained-subsequence-sum/description/
+DO AGAIN: YES 
+Notes: 
++ For subsequence problems, you should think of dp 
++ Monotonic queue is very useful in situation where you need to get the maximum value in a specific range
+
+3. Number of Substrings Containing All Three Characters
+LINK: https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/
+DO AGAIN: NO 
+Notes:
++ For problems that ask you to find subarrays that satisfy some conditions, you should try to think about how you
+can find the longest / shortest / largest / smallest subarray that ends at index i and satisfy the conditions.
+
+4. Replace the Substring for Balanced String
+LINK: https://leetcode.com/problems/replace-the-substring-for-balanced-string/description/
+DO AGAIN: NO 
