@@ -23,3 +23,33 @@ can find the longest / shortest / largest / smallest subarray that ends at index
 4. Replace the Substring for Balanced String
 LINK: https://leetcode.com/problems/replace-the-substring-for-balanced-string/description/
 DO AGAIN: NO 
+
+5. Count Number of Nice Subarrays 
+LINK: https://leetcode.com/problems/count-number-of-nice-subarrays/description/
+DO AGAIN: YES 
+NOTES:
++ Exactly K = At most K - At most (K - 1)
++ For problems where you might need to store both the longest and shortest subarrays that satisfy some conditions
+and end at index j, it is a good idea to use 3 pointers.
+
+6. Max Consecutive Ones III 
+LINK: https://leetcode.com/problems/max-consecutive-ones-iii/description/
+DO AGAIN: NO 
+
+7. Binary Subarrays With Sum 
+LINK: https://leetcode.com/problems/binary-subarrays-with-sum/description/
+DO AGAIN: NO 
+
+8. Subarrays with K Different Integers
+LINK: https://leetcode.com/problems/subarrays-with-k-different-integers/description/
+DO AGAIN: NO 
+
+9. Fruit Into Baskets 
+LINK: https://leetcode.com/problems/fruit-into-baskets/description/
+DO AGAIN: NO
+
+10. Minimum Size Subarray Sum
+LINK: https://leetcode.com/problems/minimum-size-subarray-sum/description/
+DO AGAIN: NO 
+
+11.
