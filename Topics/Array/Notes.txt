@@ -52,4 +52,17 @@ DO AGAIN: NO
 LINK: https://leetcode.com/problems/minimum-size-subarray-sum/description/
 DO AGAIN: NO 
 
-11.
+11. Minimum Cost Tree From Leaf Values
+LINK: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/description/
+DO AGAIN: YES
+
+12. Shortest Subarray with Sum at Least K
+LINK: https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/
+DO AGAIN: YES
+NOTES:
+- In range problems, you need to be careful of edge case where the answer starts from index 0
+- Monotonic queue can be utilized from both the start index and the last index.
+- For problem where you need to find the minimum length / maximum length, you don't need to find the minimum
+length or maximum length for each index. So for example, if you know the minimum substring that satisfies
+the condition ends at index j has length 3, then if you can not find any substrings with length < 3 that ends
+at index j + 1 then you can just ignore index j + 1 if the question only asks for minimum length. 
