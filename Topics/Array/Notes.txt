@@ -5,7 +5,6 @@ Notes:
 + For subarray problems, sliding window is a very powerful technique 
 + You can combine sliding window and monotonic queue to get the minimum value and maximum value of the current window.
 
-
 2. Constrained Subsequence Sum
 LINK: https://leetcode.com/problems/constrained-subsequence-sum/description/
 DO AGAIN: YES 
@@ -86,3 +85,18 @@ LINK: https://leetcode.com/problems/next-greater-element-ii/description/
 DO AGAIN: NO
 Note:
 - Trick to save indexes and double the array when dealing with circular array.
+
+17. Next Greater Element I
+LINK: https://leetcode.com/problems/next-greater-element-i/description/
+DO AGAIN: NO
+
+18.Trapping Rain Water
+LINK: https://leetcode.com/problems/trapping-rain-water/description/
+DO AGAIN: YES
+
+19. Largest Rectangle in Histogram
+LINK: https://leetcode.com/problems/largest-rectangle-in-histogram/description/
+DO AGAIN: YES
+Notes:
+- You can also try the approach where you need to find maximum subarray with the condition that the minimum
+/maximum value of that subarray equals to value[i]
