@@ -1,0 +1,70 @@
+1. Lowest Common Ancestor of a Binary Search Tree
+LINK: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+DO AGAIN: YES (BINARY LIFTING)
+Notes:
+- Remember how you can calculate the parent list for each node using only 1 dfs
+- 1 << i to calculate 2**i
+- math.pow in Python is O(1)
+- Remember how to implement the jump function
+
+2. Subtree of Another Tree
+LINK: https://leetcode.com/problems/subtree-of-another-tree/description/
+DO AGAIN: NO
+NOTES:
+- Technique to generate ids for all subtrees in a tree in O(N)
+
+3. Invert Binary Tree
+LINK: https://leetcode.com/problems/invert-binary-tree/description/
+DO AGAIN: YES (USING STACK)
+NOTES:
+- Trick to invert a binary tree using only stack
+
+4. Maximum Depth of Binary Tree
+LINK: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+DO AGAIN: NO
+
+5. Diameter of Binary Tree
+LINK: https://leetcode.com/problems/diameter-of-binary-tree/description/
+DO AGAIN: YES
+NOTE:
+- Learn the proof of finding the diameter of a binary tree
+
+6. Balanced Binary Tree
+LINK: https://leetcode.com/problems/balanced-binary-tree/description/
+DO AGAIN: NO
+
+7. Same Tree
+LINK: https://leetcode.com/problems/same-tree/description/
+DO AGAIN: NO
+
+8. Binary Tree Level Order Traversal
+LINK: https://leetcode.com/problems/binary-tree-level-order-traversal/description/
+DO AGAIN: NO
+Notes: Remember how to perform level order traversal as it can be very useful
+
+9.  Binary Tree Right Side View
+LINK: https://leetcode.com/problems/binary-tree-right-side-view/description/
+DO AGAIN: NO
+
+10. Count Good Nodes in Binary Tree
+Link: https://leetcode.com/problems/count-good-nodes-in-binary-tree/description/
+DO AGAIN: NO
+
+11.  Validate Binary Search Tree
+LINK: https://leetcode.com/problems/validate-binary-search-tree/description/
+DO AGAIN: YES
+Notes:
+- For bst, you can always keep the min value and max value of left and right trees for each root.
+
+12. Kth Smallest Element in a BST
+LINK: https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+DO AGAIN: NO
+Notes:
+- Learn how to perform inorder, preorder, postorder traversals iteratively.
+
+13. Construct Binary Tree From Preorder And Inorder Traversal
+LINK: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
+DO AGAIN: YES
+
+
+
