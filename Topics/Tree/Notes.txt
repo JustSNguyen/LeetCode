@@ -66,5 +66,14 @@ Notes:
 LINK: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
 DO AGAIN: YES
 
+14. Binary Tree Maximum Path Sum
+LINK: https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
+DO AGAIN: NO
 
-
+15. Serialize and Deserialize Binary Tree
+LINK: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/
+DO AGAIN: YES
+Notes:
+- Trick to use preorder traversal to present a binary tree
+- Trick to use preorder + inorder traversal to present a binary tree
+- Trick to serialize a binary string like this: "2(56(4))(3)"
