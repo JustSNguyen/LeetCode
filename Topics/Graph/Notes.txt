@@ -29,3 +29,30 @@ Notes:
 For problems where one element can transform to another element using some rules, you can try to turn the problem
 into a graph problem.
 
+7. Problem 1584
+https://leetcode.com/problems/min-cost-to-connect-all-points/description/
+DO AGAIN: YES
+Notes: - Remember how to perform Prim algorithm
+
+8. Problem 787
+LINK: https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
+DO AGAIN: YES
+Notes:
+- Remember how to perform Bellman Ford
+- Bellman Ford is very useful in problems where you need to find the shortest distance btw two points but only
+allows to use no more than K edges / vertices
+
+10. Problem 332
+https://leetcode.com/problems/reconstruct-itinerary/description/
+DO AGAIN: YES
+Notes:
+- Remember how to find an Eulerian path / cycle in O(E)
+- Remember how to find an Hamilton path / cycle
+- Remember how to identify if a graph has an eulerian path / cycle
+- Remember how to identify if a graph has a hamilton path / cycle
+
+11. Problem 778
+https://leetcode.com/problems/swim-in-rising-water/description/
+DO AGAIN: YES
+Notes:
+- Try to solve it using dsu
