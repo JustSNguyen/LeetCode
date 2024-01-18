@@ -1,0 +1,31 @@
+1. Problem 133
+LINK: https://leetcode.com/problems/clone-graph/description/
+DO AGAIN: YES
+Notes:
+- In undirected graph, you should always remember to store the processed node.
+
+2. Problem 994
+LINK: https://leetcode.com/problems/rotting-oranges/description/
+DO AGAIN: YES
+
+3. Problem 210
+LINK: https://leetcode.com/problems/rotting-oranges/description/
+DO AGAIN: YES
+- Notes:
+Remember how to perform topo sort using dfs
+
+4. A graph (with nodes from 0 to N - 1) is a tree if it has exactly N - 1 edges and is connected.
+
+5.Problem 684
+LINK: https://leetcode.com/problems/redundant-connection/description/
+DO AGAIN: YES
+- Notes:
+Find the proof of dsu path compression time complexity
+
+6. Problem 127
+LINK: https://leetcode.com/problems/word-ladder/description/
+DO AGAIN: YES
+Notes:
+For problems where one element can transform to another element using some rules, you can try to turn the problem
+into a graph problem.
+
