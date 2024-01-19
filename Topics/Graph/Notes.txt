@@ -56,3 +56,10 @@ https://leetcode.com/problems/swim-in-rising-water/description/
 DO AGAIN: YES
 Notes:
 - Try to solve it using dsu
+
+12. Problem 269
+https://leetcode.ca/all/269.html
+DO AGAIN: YES
+Notes:
+- In problem where there are orders between the elements, you can try to use Topo sort.
+
