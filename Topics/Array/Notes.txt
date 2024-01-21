@@ -100,3 +100,15 @@ DO AGAIN: YES
 Notes:
 - You can also try the approach where you need to find maximum subarray with the condition that the minimum
 /maximum value of that subarray equals to value[i]
+
+19. 3 SUM 
+DO AGAIN: YES 
+https://leetcode.com/problems/3sum/description/
+
+20. Top K Frequent Elements 
+DO AGAIN: YES 
+https://leetcode.com/problems/top-k-frequent-elements/description/ 
+NOTES:
+- In problems related to frequency, you can try the approach of spliting the array based on the frequency. 
+
+21. 
