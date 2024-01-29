@@ -1,0 +1,48 @@
+1. Subsets
+Do again: No
+Notes:
+- The number of different subsets is 2^N (including empty subset)
+- Python is pass by assignment:
+def f(a):
+    console.log(a)
+
+x = 5
+f(x) # a = x
+
+2. Combination Sum
+Do again: No
+Notes:
+- Use bitset instead
+- Time complexity: Probabably N^M with N is the number of candidates and M is the target (since each candidate can be picked at most
+M times)
+
+3. Permutation
+Do again: No
+- Notes:
+- Time complexity: O(e * N!) = O(N!) because T(N) = 1 + n + n * (n - 1) + ... + n! = n! * ( 1 + 1 / n + 1 / n^2 + .. + 1/n!) = n! * e
+
+4. Word search
+https://leetcode.com/problems/word-search/description/
+Do again: Yes
+Notes:
++ Time complexity: m * n * 4^k (k is the length of word) (this is the number of leaves in the recursion tree)
+
+5. Palindrome Partitioning
+https://leetcode.com/problems/palindrome-partitioning/description/
+Do again: No
+Notes:
++ Time complexity: N * 2^(N - 1), 2^(n-1) is the number of different ways you can split a string.
+Proof: You have at most N - 1 bars to choose from (bars here are the separator btw 2 characters) the strings, you are allowed to pick at
+min 0 bars and max N - 1 bars at once, how many different ways are there to pick the bars ?
+0C(N - 1) + 1C(N-1) + 2C(N-1) + ... + (N-1)C(N-1) = 2^(N - 1)
+
+6. N Queens
+https://leetcode.com/problems/n-queens/description/
+Do again: Yes
+
+
+
+
+
+
+
