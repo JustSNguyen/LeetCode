@@ -111,4 +111,13 @@ https://leetcode.com/problems/top-k-frequent-elements/description/
 NOTES:
 - In problems related to frequency, you can try the approach of spliting the array based on the frequency. 
 
-21. 
+21. Valid Sudoku
+DO AGAIN: YES
+https://leetcode.com/problems/valid-sudoku/description/
+Notes:
+- In problems where the range of value for each element is small, try bitset
+- Trick to set ith bit to 1
+- Trick to set ith bit to 0
+- Trick to identify the corresponding square based on row and column in sudoku board.
+
+22.
