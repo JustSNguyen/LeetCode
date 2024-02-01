@@ -1,0 +1,50 @@
+1. Single Number
+Link: https://leetcode.com/problems/single-number/description/
+Do again: Yes
+Notes:
+- a xor a = 0
+- a xor b xor c xor d = (a xor c) xor (b xor d)
+
+2. Number of 1 Bits
+Link: https://leetcode.com/problems/number-of-1-bits/description/
+Do again: No
+Notes:
+- n & (n - 1) trick to calculate number of 1 bit in a number.
+
+3. Counting Bits
+Link: https://leetcode.com/problems/counting-bits/description/
+Do again: No
+Notes: - Number of one bits in N equals to 1 + number of one bits in M with M = N - largest power of two smaller than N
+
+4. Reverse Bits
+Link: https://leetcode.com/problems/reverse-bits/description/
+Do again: Yes
+Notes:
+- Trick to reverse a binary string without using for loop / while loop
+
+5. Missing Number
+Link: https://leetcode.com/problems/missing-number/description/
+Do again: Yes
+Notes:
+- For problems where you need to find ONE missing number that satisfies some conditions, you can try to utilize the xor trick.
+(a xor a = 0, 0 xor a = a)
+
+6. Sum of Two Integers
+Link: https://leetcode.com/problems/sum-of-two-integers/description/
+Do again: Yes
+Notes:
+- Techniques to add and minus two numbers using bit manipulation
+
+7. Operations using bits only (REVIEW)
+- Add: Like Leetcode Sum of Two Integers
+- Minus: Minus is just add with negative numbers
+- Multiply: a *= 2, b //= 2
+- Divide: Find the largest power of two p such that p * divisor <= dividend
+- Modulus
+
+8. Reverse Integer
+Link: https://leetcode.com/problems/reverse-integer/description/
+Do again: Yes
+Notes:
+- Trick to reverse a negative number without converting it to positive number first.
+- math.trunc trick
