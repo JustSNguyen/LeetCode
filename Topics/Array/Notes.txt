@@ -111,7 +111,6 @@ https://leetcode.com/problems/top-k-frequent-elements/description/
 NOTES:
 - In problems related to frequency, you can try the approach of spliting the array based on the frequency. 
 
-<<<<<<< HEAD
 21. Valid Sudoku
 DO AGAIN: YES
 https://leetcode.com/problems/valid-sudoku/description/
@@ -120,10 +119,19 @@ Notes:
 - Trick to set ith bit to 1
 - Trick to set ith bit to 0
 - Trick to identify the corresponding square based on row and column in sudoku board.
-=======
+
 21. Encode and decode strings 
 DO AGAIN: YES 
 https://www.lintcode.com/problem/659/
->>>>>>> 60b4086b019231b6e3380aacf4c022d492e1227d
 
-22.
+22. Valid Parentheses
+DO AGAIN: YES
+https://leetcode.com/problems/valid-parentheses/description/
+
+23. Min stack
+Do again: No
+https://leetcode.com/problems/min-stack/description/
+Notes:
+For stack problem where you need to retrieve some information from the stack in O(1), you can try to append some information to each
+element before pushing it to the stack.
+
