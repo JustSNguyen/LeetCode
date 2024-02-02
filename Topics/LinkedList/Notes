@@ -1,0 +1,23 @@
+1. Reorder List
+Link: https://leetcode.com/problems/reorder-list/description/
+Do again: Yes
+Notes:
+- Fast and slow pointers can be used to find the middle part of a linked list with O(1) space complexity
+
+2. Copy List with Random Pointer
+Link: https://leetcode.com/problems/copy-list-with-random-pointer/description/
+Do again: Yes
+Notes:
+- Trick to keep a copy of a node by using next pointer instead of hashmap
+
+3. Linked List Cycle
+Link: https://leetcode.com/problems/linked-list-cycle/description/
+Do again: No
+Notes:
+- Remember how to prove the fast and slow algorithm to find the start of a cycle in a linked list.
+
+4. LRU Cache
+Link: https://leetcode.com/problems/lru-cache/description/
+Do again: Yes
+Notes:
+- Be careful when implementing double linked list 
