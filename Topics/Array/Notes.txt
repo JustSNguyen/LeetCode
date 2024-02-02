@@ -135,3 +135,10 @@ Notes:
 For stack problem where you need to retrieve some information from the stack in O(1), you can try to append some information to each
 element before pushing it to the stack.
 
+24. Evaluate Reverse Polish Notation
+Do again: No
+https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
+Notes:
+Use math.trunc to get the natural number part instead of // (// will floor the number down for negative division)
+
+25. 
