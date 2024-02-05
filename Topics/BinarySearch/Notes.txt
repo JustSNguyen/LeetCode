@@ -1,0 +1,17 @@
+1. Binary search
+https://leetcode.com/problems/binary-search/description/
+Do again: No
+Notes:
+- For binary search, be careful of cases where the element is larger than the largest element or smaller than the smallest element.
+
+2. Search in Rotated Sorted Array
+https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+Do again: YES
+Notes:
+- When updating the boundary, be careful of cases of where the target is equal to the element at left or right index.
+
+3. Median of Two Sorted Arrays
+https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+Do again: YES
+Notes:
+- Technique to find kth smallest number (starting from 1) from two sorted array.
