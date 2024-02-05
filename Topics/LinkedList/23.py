@@ -16,7 +16,7 @@ class Solution:
                 heapq.heappush(min_heap, (list.val, i))
 
         while min_heap:
-            min_val, index = heapq.heappop(min_heap)
+            _, index = heapq.heappop(min_heap)
             node = lists[index]
             next_node = lists[index].next
             node.next = None
@@ -30,7 +30,7 @@ class Solution:
 
             if next_node:
                 heapq.heappush(min_heap, (next_node.val, index))
-                lists[index] = lists[index].next
+                lists[index] = next_node
 
         return head
 
