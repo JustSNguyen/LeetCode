@@ -1,0 +1,11 @@
+1/ Rotate Image
+Link: https://leetcode.com/problems/rotate-image/description/
+Do again: Yes 
+Notes:
+- Techniques to transpose and reverse a matrix 
+
+2/ Spiral Matrix 
+Link: https://leetcode.com/problems/spiral-matrix/description/
+Do again: No 
+Notes:
+- You can use the matrix / list the problems give as a visited matrix / list (O(1) space complexity)
