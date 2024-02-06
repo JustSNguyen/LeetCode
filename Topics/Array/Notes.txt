@@ -141,4 +141,16 @@ https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
 Notes:
 Use math.trunc to get the natural number part instead of // (// will floor the number down for negative division)
 
-25. 
+25. https://leetcode.com/problems/longest-repeating-character-replacement/
+Do again: Yes
+https://leetcode.com/problems/longest-repeating-character-replacement/description/
+Notes:
+For problems that ask you to find the max / min of something, you don't need to find the min/max that starts / ends at every indexes,
+you only need to update the max / min when possible.
+
+26. Sliding Window Maximum
+https://leetcode.com/problems/sliding-window-maximum/description/
+Do again: No
+Notes:
+For sliding window problem, be careful of cases where the window length is not valid. For example, in this problem, the minimum length
+of the window must be k so every window with length < k is invalid.
