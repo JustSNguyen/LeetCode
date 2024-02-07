@@ -9,3 +9,15 @@ Link: https://leetcode.com/problems/spiral-matrix/description/
 Do again: No 
 Notes:
 - You can use the matrix / list the problems give as a visited matrix / list (O(1) space complexity)
+
+3/ Pow(x, n) 
+Link: https://leetcode.com/problems/powx-n/description/
+Do again: No 
+Notes:
+- When using recursion, you can try to utilize lru_cache to avoid calculating the same state multiple times. 
+
+4/ Detect Squares (2013 and 2013_harder)
+Link: https://leetcode.com/problems/detect-squares/description/
+Do again: Yes 
+Notes: 
+- Review basic geometry and basic algebra
