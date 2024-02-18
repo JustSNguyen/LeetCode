@@ -1,0 +1,13 @@
+1. Palindromic Substrings 
+Link: https://leetcode.com/problems/palindromic-substrings/description/
+Do again: Yes (use Manacher algorithm instead)
+
+2. Coin Change
+Link: https://leetcode.com/problems/coin-change/description/ 
+Notes:
+- Be careful of the variables'name 
+- Be careful of the for loop range 
+
+3. Longest Increasing Subsequence 
+Link: https://leetcode.com/problems/longest-increasing-subsequence/description/ 
+Do again: Yes (but in NlogN)
