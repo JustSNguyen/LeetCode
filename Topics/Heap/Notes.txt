@@ -1,0 +1,9 @@
+- In a problem where you need information about the Kth largest elements, it is a good sign you should use heap
+
+- Problem 621 (DO AGAIN): Try to solve it in O(N) and O(Nlog2N)
+
+- Problem 355 (DO AGAIN): In problems where you need to find Kth largest / smallest elements from M SORTED lists => heap and linked list
+problems.
+
+- 
+

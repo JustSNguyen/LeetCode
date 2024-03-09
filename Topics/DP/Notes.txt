@@ -16,4 +16,19 @@ Do again: Yes (but in NlogN)
 Link: https://leetcode.com/problems/coin-change-ii/ 
 Do again: Yes 
 
-5. 
+5. Target Sum
+Link: https://leetcode.com/problems/target-sum/description/
+Do again: Yes
+Notes:
+- In problems where you need to split the elements into multiple groups, you can try to convert it into Knapsack problem
+- Technique to solve Knapsack problem using only O(N) memory
+
+6. Interleaving string
+Link: https://leetcode.com/problems/interleaving-string/
+Do again: Yes
+
+7. Edit distance
+Link: https://leetcode.com/problems/edit-distance/description/
+Do again: Yes
+
+8. 

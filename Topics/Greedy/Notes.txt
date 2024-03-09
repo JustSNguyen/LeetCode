@@ -1,0 +1,11 @@
+1. Problem 45 (DO AGAIN)
+
+2. Problem 134 (DO AGAIN AND PROOF)
+
+3.  Problem 678 (do again using O(1) space). For parentheses problem, it is good to use the idea of
+diff = number of open bracket - number of close bracket.
+
+For normal problem (with only open and close bracket), at any moment diff < 0 => false, at the end if diff > 0 => false else true
+For this problem diff is a range from min_diff to max_diff
+min_diff is when we decide to replace all * with close bracket
+max_diff is when we decide to replace all * with open bracket
