@@ -1,0 +1,14 @@
+1. Problem 57
+DO AGAIN: YES
+- Be careful of case when the list is empty
+
+2. Problem 56
+- For intervals problem, you should check whether the list of intervals is sorted or not. If not, then you should try to sort it.
+
+3. Problem 435
+- Do again using DP Solution
+- For interval problems that require you to remove minimum number of intervals to make the intervals list non overlapped, a greedy
+approach would be sort by interval[1] and then try to pick all interval with minimum end.
+
+4. Meeting room 2
+- Do again
