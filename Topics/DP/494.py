@@ -1,4 +1,5 @@
 from typing import List 
+from functools import lru_cache
 
 class Solution:
     def findTargetSumWays(self, nums: List[int], T: int) -> int:
