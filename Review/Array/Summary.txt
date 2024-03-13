@@ -1,0 +1,9 @@
+- For problems that require you to find the minimum, maximum value of a subarray, subsequence after updating the tail or start
+of that subarray, subsequence, there is a huge chance you gonna need MONOSTACK.
+
+- In problems where you need to find the max dp in a certain range, try to use MONOSTACK.
+
+- Exactly K times = at most K times - at most K - 1 times
+
+- For array problems, Two pointers first then DP
+
