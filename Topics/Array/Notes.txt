@@ -45,7 +45,6 @@ DO AGAIN: NO
 
 10. Minimum Size Subarray Sum
 LINK: https://leetcode.com/problems/minimum-size-subarray-sum/description/
-DO AGAIN: NO 
 
 11. Minimum Cost Tree From Leaf Values
 LINK: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/description/
@@ -64,11 +63,9 @@ at index j + 1 then you can just ignore index j + 1 if the question only asks fo
 
 13. Sum of Subarray Minimums
 LINK: https://leetcode.com/problems/sum-of-subarray-minimums/description/
-DO AGAIN: NO
 
 14. Online Stock Span
 LINK: https://leetcode.com/problems/online-stock-span/description/
-DO AGAIN: NO
 
 15. Score of Parentheses
 LINK: https://leetcode.com/problems/score-of-parentheses/description/
@@ -78,21 +75,17 @@ Note:
 
 16. Next Greater Element II
 LINK: https://leetcode.com/problems/next-greater-element-ii/description/
-DO AGAIN: NO
 Note:
 - Trick to save indexes and double the array when dealing with circular array.
 
 17. Next Greater Element I
 LINK: https://leetcode.com/problems/next-greater-element-i/description/
-DO AGAIN: NO
 
 18.Trapping Rain Water
 LINK: https://leetcode.com/problems/trapping-rain-water/description/
-DO AGAIN: YES
 
 19. Largest Rectangle in Histogram
 LINK: https://leetcode.com/problems/largest-rectangle-in-histogram/description/
-DO AGAIN: YES
 Notes:
 - You can also try the approach where you need to find maximum subarray with the condition that the minimum
 /maximum value of that subarray equals to value[i]
@@ -102,8 +95,7 @@ DO AGAIN: YES
 https://leetcode.com/problems/3sum/description/
 
 20. Top K Frequent Elements 
-DO AGAIN: YES 
-https://leetcode.com/problems/top-k-frequent-elements/description/ 
+https://leetcode.com/problems/top-k-frequent-elements/description/
 NOTES:
 - In problems related to frequency, you can try the approach of spliting the array based on the frequency. 
 
@@ -117,15 +109,12 @@ Notes:
 - Trick to identify the corresponding square based on row and column in sudoku board.
 
 21. Encode and decode strings 
-DO AGAIN: YES 
 https://www.lintcode.com/problem/659/
 
 22. Valid Parentheses
-DO AGAIN: YES
 https://leetcode.com/problems/valid-parentheses/description/
 
 23. Min stack
-Do again: No
 https://leetcode.com/problems/min-stack/description/
 Notes:
 For stack problem where you need to retrieve some information from the stack in O(1), you can try to append some information to each

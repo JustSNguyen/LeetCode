@@ -7,3 +7,13 @@ of that subarray, subsequence, there is a huge chance you gonna need MONOSTACK.
 
 - For array problems, Two pointers first then DP
 
+- For problems that require you to count the number of subarrays that satisfy some conditions, you can try to
+use prefix sum if possible.
+
+- For problems that require you to find the min, max length of something, you DON'T need to find the min, max length
+at every index. For example, if you know that the current minimum length is 3 then you only need to consider
+all subarrays with length <= 3 even if there is a subarray with length > 3 that satisfies the condition, it does
+not matter since the min length is still the same.
+
+- For problems that are related to frequency, you can try to utilize bucket sort (time complexity: O(N))
+
