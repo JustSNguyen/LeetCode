@@ -1,2 +1,7 @@
 1. Problem 1171:
 - For problems related to prefix, remember the trick that if prefix[i] == prefix[j] <=> sum(arr[i +1:j + 1]) = 0
+
+2. Problem 930:
+- For problems that require you to count the number of subarrays that satisfy some conditions, you can try to
+use prefix sum if possible.
+
