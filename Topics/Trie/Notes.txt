@@ -1,3 +1,7 @@
 General notes:
 - For problems that are related to searching MULTIPLE strings, you should consider trie
-- When searching for words in a trie, you should remember to check if the node is_end_of_word before returning the result. 
+- When searching for words in a trie, you should remember to check if the node is_end_of_word before returning the result.
+
+1. Word search:
+- Do again: Yes 
+- Link: https://leetcode.com/problems/word-search-ii/description/

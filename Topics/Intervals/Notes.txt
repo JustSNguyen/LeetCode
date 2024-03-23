@@ -12,3 +12,9 @@ approach would be sort by interval[1] and then try to pick all interval with min
 
 4. Meeting room 2
 - Do again
+
+5. Minimum interval to include each query 
+- For NlogN time complexity, there is a really huge chance you gonna need a heap 
+- The trick in this problem is to realize that if an interval is invalid for a smaller query, it will also
+be invalid for a larger query. 
+- Do again: Yes 

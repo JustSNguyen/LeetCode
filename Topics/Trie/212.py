@@ -1,60 +1,50 @@
-from typing import List
+from typing import List 
 
-
-class TrieNode:
+class Node:
     def __init__(self):
         self.children = dict()
 
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-
-    def search(self, word):
-        cur = self.root
+    def __contains__(self, word):
+        cur = self 
         for char in word:
             if char not in cur.children:
-                return False
-
+                return False 
+            
             cur = cur.children[char]
-
-        return True
+        
+        return True 
 
 class Solution:
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
-        m = len(board)
-        n = len(board[0])
-        trie = Trie()
-        visited = [[False for _ in range(n)] for _ in range(m)]
-        def dfs(i, j, parent):
+        def dfs(i, j, visited, parent):
+            char = board[i][j]
+            if char not in parent.children:
+                parent.children[char] = Node()
+            
+            visited[i][j] = True 
+
             offsets = [(-1, 0), (0, 1), (1, 0), (0, -1)]
             for offset in offsets:
                 ni, nj = i + offset[0], j + offset[1]
-                if i < 0 or j < 0 or i == m or j == n or visited[i][j]:
-                    continue
-                visited[ni][nj] = True
-                char = board[ni][nj]
-                new_parent = TrieNode()
-                parent.children[char] = new_parent
-                dfs(ni, nj, new_parent)
-                visited[ni][nj] = False
+                if ni < 0 or nj < 0 or ni == M or nj == N or visited[ni][nj]:
+                    continue 
+                    
+                dfs(ni, nj, visited, parent.children[char])
+            
+            visited[i][j] = False 
 
-        start_node = TrieNode()
-        trie.root.children[board[0][0]] = start_node
-
+        M = len(board)
+        N = len(board[0])
+        root = Node()
+        for i in range(M):
+            for j in range(N):
+                visited = [[False for _ in range(N)] for _ in range(M)]
+                dfs(i, j, visited, root)
+        
         result = []
         for word in words:
-            if word[0] not in trie.root.children:
-                for i in range(m):
-                    for j in range(n):
-                        if board[i][j] == word[0]:
-                            if word[0] not in trie.root.children:
-                                trie.root.children[word[0]] = TrieNode()
-
-            elif trie.search(word):
-
-
-
-            if trie.search(word):
+            if word in root:
                 result.append(word)
+        
+        return result 
 
-        return result
