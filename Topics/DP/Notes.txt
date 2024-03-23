@@ -31,4 +31,14 @@ Do again: Yes
 Link: https://leetcode.com/problems/edit-distance/description/
 Do again: Yes
 
-8. 
+8. Burst balloons 
+Link: https://leetcode.com/problems/burst-balloons/description/
+Do again: Yes 
+Notes: 
+- For dp problem, try to look at the extreme elements like first / last, biggest / smallest , ...
+- Try to do problem 664, 546, 1000 if you have time. 
+
+9. Regular Expression Matching
+Link: https://leetcode.com/problems/regular-expression-matching/description/
+Do again: No (review is fine)
+- Lots of edge cases 
