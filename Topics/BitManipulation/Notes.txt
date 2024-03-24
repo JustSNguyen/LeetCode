@@ -1,6 +1,5 @@
 1. Single Number
 Link: https://leetcode.com/problems/single-number/description/
-Do again: Yes
 Notes:
 - a xor a = 0
 - a xor b xor c xor d = (a xor c) xor (b xor d)
@@ -18,13 +17,11 @@ Notes: - Number of one bits in N equals to 1 + number of one bits in M with M = 
 
 4. Reverse Bits
 Link: https://leetcode.com/problems/reverse-bits/description/
-Do again: Yes
 Notes:
 - Trick to reverse a binary string without using for loop / while loop
 
 5. Missing Number
 Link: https://leetcode.com/problems/missing-number/description/
-Do again: Yes
 Notes:
 - For problems where you need to find ONE missing number that satisfies some conditions, you can try to utilize the xor trick.
 (a xor a = 0, 0 xor a = a)
@@ -44,7 +41,6 @@ Notes:
 
 8. Reverse Integer
 Link: https://leetcode.com/problems/reverse-integer/description/
-Do again: Yes
 Notes:
 - Trick to reverse a negative number without converting it to positive number first.
 - math.trunc trick

@@ -1,0 +1,10 @@
+- a xor a = 0 and a xor 1 = a 
+- n & (n - 1) to calculate the number of 1 bits in a number (time complexity: O(M) with M is the number 
+of bits equal to 1 in a number)
+
+- https://leetcode.com/problems/reverse-bits/description/ reverse bits tricks 
+
+- For problems where you need to find ONE missing number that satisfies some conditions, you can try to 
+utilize the xor trick.
+
+- Operations using only bits 

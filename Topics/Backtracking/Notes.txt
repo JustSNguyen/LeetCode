@@ -23,7 +23,6 @@ Do again: No
 
 4. Word search
 https://leetcode.com/problems/word-search/description/
-Do again: Yes
 Notes:
 + Time complexity: m * n * 4^k (k is the length of word) (this is the number of leaves in the recursion tree)
 
@@ -38,7 +37,6 @@ min 0 bars and max N - 1 bars at once, how many different ways are there to pick
 
 6. N Queens
 https://leetcode.com/problems/n-queens/description/
-Do again: Yes
 
 
 

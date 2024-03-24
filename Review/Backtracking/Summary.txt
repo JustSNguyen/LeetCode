@@ -1,0 +1,7 @@
+1. For this problem: https://leetcode.com/problems/word-search/description/, time complexity is 
+m * n * 3^k (k is the length of the word)
+
+2. The queen problem time complexity is O(N!) 
+
+3. Consider using global variables instead of passing arguments to functions in backtracking problems.
+
