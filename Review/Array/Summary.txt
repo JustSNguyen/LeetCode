@@ -1,5 +1,7 @@
-- For problems that require you to find the minimum, maximum value of a subarray, subsequence after updating the tail or start
-of that subarray, subsequence, there is a huge chance you gonna need MONOSTACK.
+- For problems that require you to find the minimum, maximum value of a subarray, subsequence after updating the 
+tail or start of that subarray, subsequence, there is a huge chance you gonna need MONOSTACK.
+Some example problems: 
+https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/
 
 - In problems where you need to find the max dp in a certain range, try to use MONOSTACK.
 
@@ -16,4 +18,3 @@ all subarrays with length <= 3 even if there is a subarray with length > 3 that 
 not matter since the min length is still the same.
 
 - For problems that are related to frequency, you can try to utilize bucket sort (time complexity: O(N))
-

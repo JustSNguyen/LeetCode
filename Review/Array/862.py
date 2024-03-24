@@ -1,36 +1,44 @@
-from typing import List
+from typing import List 
+from collections import deque 
 import bisect
 
 class Solution:
     def shortestSubarray(self, nums: List[int], k: int) -> int:
-        decreasing_stack_by_value = [0]
-        decreasing_stack_by_index = [-1]
-        prefix_sum = 0
-        INF = len(nums) + 1
-        min_length = INF
+        increasing_queue_by_value = deque()
+        increasing_queue_by_index = deque()
+        
+        increasing_queue_by_value.append(0)
+        increasing_queue_by_index.append(-1)
+
+        prefix = 0 
+        shortest = len(nums) + 1 
+
         for i, num in enumerate(nums):
-            prefix_sum += num
-            max_other = prefix_sum - k
-            if max_other >= decreasing_stack_by_value[0]:
-                insert_position = bisect.bisect_right(decreasing_stack_by_value, max_other) - 1
-                j = decreasing_stack_by_index[insert_position]
-                min_length = min(min_length, i - j)
+            prefix += num 
+            while increasing_queue_by_index and increasing_queue_by_index[0] < i - shortest:
+                increasing_queue_by_index.popleft()
+                increasing_queue_by_value.popleft()
 
-            while decreasing_stack_by_value and prefix_sum <= decreasing_stack_by_value[-1]:
-                decreasing_stack_by_value.pop()
-                decreasing_stack_by_index.pop()
+            if increasing_queue_by_value and increasing_queue_by_value[0] <= prefix - k:
+                j1 = bisect.bisect_right(increasing_queue_by_value, prefix - k) - 1 
+                j2 = increasing_queue_by_index[j1]
+                shortest = min(shortest, i - j2)
 
-            decreasing_stack_by_value.append(prefix_sum)
-            decreasing_stack_by_index.append(i)
-
-        if min_length == INF:
-            return -1
-
-        return min_length
+            while increasing_queue_by_value and increasing_queue_by_value[-1] >= prefix:
+                increasing_queue_by_value.pop()
+                increasing_queue_by_index.pop()
+            
+            increasing_queue_by_value.append(prefix)
+            increasing_queue_by_index.append(i)
+        
+        if shortest > len(nums):
+            return -1 
+        
+        return shortest 
 
 if __name__ == '__main__':
-    nums = [17,85,93,-45,-21]
-    k = 150
     sol = Solution()
-    result = sol.shortestSubarray(nums, k)
+    test = [48,99,37,4,-31]
+    k = 140
+    result = sol.shortestSubarray(test, k)
     print(result)

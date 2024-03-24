@@ -21,7 +21,6 @@ LINK: https://leetcode.com/problems/replace-the-substring-for-balanced-string/de
 
 5. Count Number of Nice Subarrays 
 LINK: https://leetcode.com/problems/count-number-of-nice-subarrays/description/
-DO AGAIN: YES 
 NOTES:
 + Exactly K = At most K - At most (K - 1)
 + For problems where you might need to store both the longest and shortest subarrays that satisfy some conditions
@@ -48,7 +47,6 @@ LINK: https://leetcode.com/problems/minimum-size-subarray-sum/description/
 
 11. Minimum Cost Tree From Leaf Values
 LINK: https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/description/
-DO AGAIN: YES
 
 12. Shortest Subarray with Sum at Least K
 LINK: https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/description/
@@ -69,7 +67,7 @@ LINK: https://leetcode.com/problems/online-stock-span/description/
 
 15. Score of Parentheses
 LINK: https://leetcode.com/problems/score-of-parentheses/description/
-DO AGAIN: YES
+REVIEW: YES
 Note:
 - Trick to save the number of layers inside each bracket by pushing it back to the stack.
 
@@ -91,7 +89,6 @@ Notes:
 /maximum value of that subarray equals to value[i]
 
 19. 3 SUM 
-DO AGAIN: YES 
 https://leetcode.com/problems/3sum/description/
 
 20. Top K Frequent Elements 
@@ -100,7 +97,6 @@ NOTES:
 - In problems related to frequency, you can try the approach of spliting the array based on the frequency. 
 
 21. Valid Sudoku
-DO AGAIN: YES
 https://leetcode.com/problems/valid-sudoku/description/
 Notes:
 - In problems where the range of value for each element is small, try bitset
@@ -127,7 +123,7 @@ Notes:
 Use math.trunc to get the natural number part instead of // (// will floor the number down for negative division)
 
 25. https://leetcode.com/problems/longest-repeating-character-replacement/
-Do again: Yes
+REVIEW: YES
 https://leetcode.com/problems/longest-repeating-character-replacement/description/
 Notes:
 For problems that ask you to find the max / min of something, you don't need to find the min/max that starts / ends at every indexes,

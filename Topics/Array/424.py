@@ -3,14 +3,17 @@ from collections import defaultdict
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         cnt = defaultdict(int)
-        j = 0
-        max_length = 0
+        max_cnt = 0
+        longest = 0 
+
         for i, char in enumerate(s):
-            cnt[char] += 1
-            while (i - j + 1) - max(cnt.values()) > k:
-                cnt[s[j]] -= 1
-                j += 1
+            cnt[char] += 1 
+            max_cnt = max(max_cnt, cnt[char])
 
-            max_length = max(max_length, i - j + 1)
-
-        return max_length
+            if longest + 1 - max_cnt <= k:
+                longest += 1
+            else:
+                j = i - longest
+                cnt[s[j]] -= 1 
+        
+        return longest 
