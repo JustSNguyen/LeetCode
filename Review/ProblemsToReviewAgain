@@ -1,0 +1,53 @@
+1. Array
+Valid Anagram
+
+2. Two Pointers
+Trapping Rain Water
+
+3. Stack
+Generate Parentheses
+Car Fleet
+- For stack problems, you can always append information to the top element like minimum_value_up_to_that_element
+
+4. Binary Search
+Search a 2D matrix
+Median of 2 sorted arrays
+Search in a rotated sorted array
+Find Minimum in Rotated Sorted Array
+
+- Trick to turn 2d coordinates into 1d and vice versa.
+- For problems that ask you to find the minimum, maximum value, you should always try to see whether you can use
+binary search or not.
+- Algorithm to find the kth smallest number among 2 sorted arrays.
+
+5. Sliding Window
+- If you need to find the maximum / minimum value when using sliding window, it is probably a good idea to use
+monostack.
+
+6. Linked list
+Remove nth node from end of list.
+Copy list with random pointers (trick to append copied node right next to the current node)
+Reverse nodes in K group
+Find The Duplicate Number
+
+- Proof of the turtle vs rabbit algorithm
+
+7. Trees
+Diameter of a binary tree
+Subtree of another tree
+Construct Binary Tree from Preorder and Inorder Traversal
+Serialize and Deserialize Binary Tree
+
+- Proof for finding diameter of a binary tree.
+- Technique to generate id for
+- Binary jumping (if you have time)
+
+8. Backtracking
+Subsets II
+Combination Sum
+Combination Sum II
+Palindrome Partitioning
+
+9. 1D DP
+
+

@@ -1,15 +1,13 @@
 1. Problem 133
 LINK: https://leetcode.com/problems/clone-graph/description/
-DO AGAIN: YES
 Notes:
 - In undirected graph, you should always remember to store the processed node.
 
 2. Problem 994
 LINK: https://leetcode.com/problems/rotting-oranges/description/
-DO AGAIN: YES
 
 3. Problem 210
-LINK: https://leetcode.com/problems/rotting-oranges/description/
+LINK: https://leetcode.com/problems/course-schedule-ii/
 DO AGAIN: YES
 - Notes:
 Remember how to perform topo sort using dfs
@@ -18,7 +16,6 @@ Remember how to perform topo sort using dfs
 
 5.Problem 684
 LINK: https://leetcode.com/problems/redundant-connection/description/
-DO AGAIN: YES
 - Notes:
 Find the proof of dsu path compression time complexity
 
@@ -59,7 +56,6 @@ Notes:
 
 12. Problem 269
 https://leetcode.ca/all/269.html
-DO AGAIN: YES
 Notes:
 - In problem where there are orders between the elements, you can try to use Topo sort.
 
